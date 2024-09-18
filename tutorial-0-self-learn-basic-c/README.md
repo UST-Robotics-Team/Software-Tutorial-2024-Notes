@@ -95,6 +95,6 @@ You can see the submission guidelines on the README shown below the file list.
 
 <img src="https://github.com/user-attachments/assets/2ae49d4a-6a6b-44eb-81ef-09e406ac7746" width="750">
 
-
+<br/>
 
 [To Tutorial 1 Page](../tutorial-1-c-and-cubeide-setup/README.md)
