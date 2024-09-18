@@ -87,7 +87,7 @@ Please submit these homeworks before 27 Sep 2024 (Fri) 18:00
 
 Submission Method: `Github Classroom`
 
-Please first accept the assignment on Github Classroom: `<Link TBA>` and the click the link to your working repository. Details of the submission will later be given there (note that the picture below is just for your reference, it is not your workspace link and the due date is wrong).
+Please first accept the assignment on Github Classroom: [https://classroom.github.com/a/KiL_n4Dy](https://classroom.github.com/a/KiL_n4Dy) and the click the link to your working repository. Details of the submission will later be given there (note that the picture below is just for your reference, it is not your workspace link and the due date is wrong).
 
 <img src="https://github.com/user-attachments/assets/51aa6aec-39e6-4a1a-8d43-457153e95d42" width="750">
 
