@@ -58,7 +58,7 @@ After you have installed the IDE, please follow the steps below to properly setu
 
 ### Import the project files
 
-Download the [sw-tutorial.zip](../../images/sw-tutorial.zip) we prepared for you below.
+Download the [2024-sw-tutorial.zip](../../images/2024-sw-tutorial.zip) we prepared for you below.
 
 _Note that we may have some library changes from time to time. So always follow what the tutorial notes say._
 
