@@ -205,7 +205,7 @@ Hello
 Hi
 ```
 
-> We covered the materials needed for your **Homework 2**! You can access it [here](homeworks/hw02_introduce_yourself.md). Give it a try, good luck! 
+> We covered the materials needed for your **Homework 2**! You can access it [here](homeworks/hw02-introduce-yourself.md). Give it a try, good luck! 
 
 
 ### `scanf`
