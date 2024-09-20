@@ -521,7 +521,7 @@ for( ; ; printf("Oh no~") ){ //actually all these three statements are optional
 
   </details>
 
-> We covered the materials needed for your **Homework 3**! You can access it [here](homeworks/hw03_print_shapes.md). Give it a try, good luck! 
+> We covered the materials needed for your **Homework 3**! You can access it [here](homeworks/hw03-print-shapes.md). Give it a try, good luck! 
 
 ## Self-Test
 
