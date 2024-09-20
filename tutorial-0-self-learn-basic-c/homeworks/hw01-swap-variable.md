@@ -10,12 +10,12 @@ Implement your code such that the values of a and b are swapped
 #include <stdio.h>
 
 int main() {
-    float a = 4.0f, b = 3.7f, c;
-    printf("before swapping, a = %f, b = %f\n", a, b);
-  // your code starts here
-  
-  // your code ends here
-    printf("after swapping, a = %f, b = %f\n", a, b);
+    float float1 = 4.0f, float2 = 3.7f;
+    printf("before swapping, a = %f, b = %f\n", float1, float2);
+    // your code starts here
+    
+    // your code ends here
+    printf("after swapping, a = %f, b = %f\n", float1, float2);
     return 0;
 }
 ```
