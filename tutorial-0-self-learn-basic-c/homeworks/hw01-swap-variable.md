@@ -37,7 +37,7 @@ gcc -o homework.exe main.c && ./homework.exe
 ```
 (Note: for a C code to run, we need to make it an executable file, then run it)
 
-![image](https://github.com/user-attachments/assets/7b1858cd-913b-4a84-8780-440fa3da12e6)
+![image](./../images/368292205-462ba8f7-a31a-4797-86fc-250e2d353d8e.png)
 
 
 ## Submission
