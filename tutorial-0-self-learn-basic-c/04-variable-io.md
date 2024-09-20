@@ -108,7 +108,7 @@ int x = 7;
 
 To see what is inside a variable, you can print it as follow (we will explain in detail how this line works later):
 
-> We covered the materials needed for your **Homework 1**! You can access it [here](homeworks/hw01_swap_variable.md). Give it a try, good luck!
+> We covered the materials needed for your **Homework 1**! You can access it [here](homeworks/hw01-swap-variable.md). Give it a try, good luck!
 
 ## Input-Output: `printf` and `scanf`
 
