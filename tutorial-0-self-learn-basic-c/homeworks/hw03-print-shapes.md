@@ -48,7 +48,7 @@ Totally same with Level 1 but draw a much bigger shape (only draw the red part)
 
 #### Example
 
->To avoid people finish their homework with ChatGPT, the example here is deleted. :)
+![](../images/print-shapes-example.png)
 
 You can assume the size is an integer > 1
 
