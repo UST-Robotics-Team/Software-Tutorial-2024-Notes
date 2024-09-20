@@ -27,7 +27,7 @@ Currently, in the example, the user is in the directory `/workspaces/codespaces-
 
 (Note: if you want to go up a folder you can use `cd ..`)
 
-![image](./../../462ba8f7-a31a-4797-86fc-250e2d353d8e.png)
+![image](./images/../../462ba8f7-a31a-4797-86fc-250e2d353d8e.png)
 
 Note that you need to do this everytime you open the Github Codespace.
 
