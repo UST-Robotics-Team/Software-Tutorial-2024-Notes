@@ -89,11 +89,11 @@ Submission Method: `Github Classroom`
 
 Please first accept the assignment on Github Classroom: [https://classroom.github.com/a/KiL_n4Dy](https://classroom.github.com/a/KiL_n4Dy) and the click the link to your working repository. Details of the submission will later be given there (note that the picture below is just for your reference, it is not your workspace link and the due date is wrong).
 
-<img src="https://github.com/user-attachments/assets/51aa6aec-39e6-4a1a-8d43-457153e95d42" width="750">
+![alt text](./images/accept.png)
 
 You can see the submission guidelines on the README shown below the file list.
 
-<img src="https://github.com/user-attachments/assets/2ae49d4a-6a6b-44eb-81ef-09e406ac7746" width="750">
+![alt text](./images/submit_guide.png)
 
 <br/>
 
