@@ -50,6 +50,8 @@ Totally same with Level 1 but draw a much bigger shape (only draw the red part)
 
 ![](../images/print-shapes-example.png)
 
+**Please note that this screenshot of the text is the correct output for `n=2`, we meant the side length of the left triangle is n in the prvious picture**
+
 You can assume the size is an integer > 1
 
 ## How to Run Your Code
