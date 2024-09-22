@@ -54,7 +54,7 @@ The parallelogram has length 3 given `n=2`
 
 **Please note that this screenshot of the text is the correct output for `n=2`, we meant the side length of the left triangle is n in the previous picture**
 
-**Please note that spaces are indicated by the hollow rectangles ▯. Otherwise, there are nothing. This means that the empty line on the third row is done via newline `\n`**
+**Please note that spaces are indicated by the hollow rectangles ▯. Otherwise, there are nothing. This means that the empty line on the fourth row is done via newline `\n`**
 
 You can assume the size is an integer > 1
 
