@@ -2,7 +2,7 @@
 
 ### Tutorial 2
 
-Content: STM32, GPIO, TFT
+Content: STM32, GPIO, TFT, HAL Clock
 
 Classworks: show your working mainboard to our seniors during the tutorial
 
@@ -23,10 +23,9 @@ Homeworks: show your working mainboard to our seniors in Hall 9 Lab after the tu
 
 ## Tutorial 2 Links
 
-* [Tutorial 2 Combined Notes](Tutorial-2-Combined.md)
-    * [Basic Code Structure](01-Basic-structure.md)
-    * [GPIO](02-GPIO.md)
-    * [HAL Clock and Timer](03-HAL-Clock.md)
-    * [TFT](04-TFT.md)
-    * [Setting up GPIO pin ](05-Setting-up-GPIO-Pin.md)
-    * [Homework](06-Homework.md)
+* [01 - Basic Code Structure](01-Basic-structure.md)
+* [02 - GPIO](02-GPIO.md)
+* [03 - HAL Clock and Timer](03-HAL-Clock.md)
+* [04 - TFT](04-TFT.md)
+* [05 - Setting up GPIO pin ](05-Setting-up-GPIO-Pin.md)
+* [Homework](06-Homework.md)
