@@ -162,6 +162,6 @@ This shows how we can save compilation time in a large project. The dependency i
 
 ## Chekpoint : Classwork 5
 
-> We covered the materials needed for your **Classwork 5**! You can access it [here](classwork/classwork-5-max-min-mean-median.md). Let's do it before moving on again.
+> We covered the materials needed for your **Classwork 5**! You can access it [here](classwork/classwork-5-max-min-mean-median). Let's do it before moving on again.
 
 [Continue to the Next Page](12-recursion.md)
