@@ -221,7 +221,7 @@ while (name[i] != '\0') {
     // remember that i++ is post-increment,
     // that means it returns the original value of i,
     // before adding 1 to i
-    printf("%c", day[i++]);
+    printf("%c", name[i++]);
 }
 
 printf("\n");

@@ -44,21 +44,21 @@ The max is the biggest number in the set
 #### Assumption
 
 - There will be at most 300 numbers in the set.
-- The input numbers are inside `float` range.
+- The input numbers are inside `float` range and valid data will only be **positive numbers**.
 
 #### Example
 
 The execution of the program should look like this:
 
 ```
-Enter a number to append to the number set. Enter "\" to stop appending.
+Enter a number to append to the number set. Enter "-1" to stop appending.
 >1
 >2
 >4
 >9
 >0
 >2
->\
+>-1
 Mean=3
 Median=2
 Min=0
