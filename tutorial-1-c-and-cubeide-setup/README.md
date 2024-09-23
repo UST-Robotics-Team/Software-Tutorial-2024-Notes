@@ -14,7 +14,7 @@
 
 |Session|S01|S02|S03|
 |---|---|---|---|
-|Time|30 Sep(Mon) 19:00~22:00|2 Oct(Wed) 19:00~22:00|3 Oct(Thur) 19:00~22:00|
+|Time|23 Sep(Mon) 19:00~22:00|25 Oct(Wed) 19:00~22:00|26 Oct(Thur) 19:00~22:00|
 |Venue|Room 6580 (Lift 27/28)|Room 4582 (Lift 27/28)|Room 6580 (Lift 27/28)|
 
 ### Tutorial 1 Targets
