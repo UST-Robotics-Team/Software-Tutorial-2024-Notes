@@ -5,32 +5,32 @@
 
 ## [TUTORIAL 0: Self-learn basic C](tutorial-0-self-learn-basic-c/README.md)
 
-* [01) Intro](tutorial-0-self-learn-basic-c/01_intro.md)
-* [02) Where to run your C code](tutorial-0-self-learn-basic-c/02_where_to_write_code.md)
-* [03) Hello World](tutorial-0-self-learn-basic-c/03_hello_world.md)
-* [04) Variables and Input-Output](tutorial-0-self-learn-basic-c/04_variable_io.md)
-* [05) Operators](tutorial-0-self-learn-basic-c/05_operators.md)
-* [06) Rules and Extra Features*](tutorial-0-self-learn-basic-c/06_rules_and_extra_features.md)
-* [07) Control Flow](tutorial-0-self-learn-basic-c/07_control_flow.md)
+* [01) Intro](tutorial-0-self-learn-basic-c/01-intro.md)
+* [02) Where to run your C code](tutorial-0-self-learn-basic-c/02-where-to-write-code.md)
+* [03) Hello World](tutorial-0-self-learn-basic-c/03-hello-world.md)
+* [04) Variables and Input-Output](tutorial-0-self-learn-basic-c/04-variable-io.md)
+* [05) Operators](tutorial-0-self-learn-basic-c/05-operators.md)
+* [06) Rules and Extra Features*](tutorial-0-self-learn-basic-c/06-rules-and-extra-features.md)
+* [07) Control Flow](tutorial-0-self-learn-basic-c/07-control-flow.md)
 
 * Homeworks
-  * [01) Swap Variables](tutorial-0-self-learn-basic-c/homeworks/hw01_swap_variable.md)
-  * [02) Introduce Yourself](tutorial-0-self-learn-basic-c/homeworks/hw02_introduce_yourself.md)
-  * [03) Print Shapes](tutorial-0-self-learn-basic-c/homeworks/hw03_print_shapes.md)
+  * [01) Swap Variables](tutorial-0-self-learn-basic-c/homeworks/hw01-swap-variable.md)
+  * [02) Introduce Yourself](tutorial-0-self-learn-basic-c/homeworks/hw02-introduce-yourself.md)
+  * [03) Print Shapes](tutorial-0-self-learn-basic-c/homeworks/hw03-print-shapes.md)
 
 ## [TUTORIAL 1: C and CubeIDE Setup](tutorial-1-c-and-cubeide-setup/README.md)
 
-* [08) Array and String](tutorial-1-c-and-cubeide-setup/08_array_string.md)
-* [09) Functions](tutorial-1-c-and-cubeide-setup/09_functions.md)
-* [10) Struct](tutorial-1-c-and-cubeide-setup/10_struct.md)
-* [11) Multi File Programming](tutorial-1-c-and-cubeide-setup/11_multi_file_programming.md)
-* [12) Recursion*](tutorial-1-c-and-cubeide-setup/12_recursion.md)
+* [08) Array and String](tutorial-1-c-and-cubeide-setup/08-array-string.md)
+* [09) Functions](tutorial-1-c-and-cubeide-setup/09-functions.md)
+* [10) Struct](tutorial-1-c-and-cubeide-setup/10-struct.md)
+* [11) Multi File Programming](tutorial-1-c-and-cubeide-setup/11-multi-file-programming.md)
+* [12) Recursion*](tutorial-1-c-and-cubeide-setup/12-recursion.md)
 
 * Advanced C
-  * [A1) Miscellaneous](tutorial-1-c-and-cubeide-setup/a1_preprocessor.md)
-  * [A2) Pointers](tutorial-1-c-and-cubeide-setup/a2_static_extern.md)
-  * [A3) Union](tutorial-1-c-and-cubeide-setup/a3_union.md)
-  * [A4) Pointers](tutorial-1-c-and-cubeide-setup/a4_pointers.md)
+  * [A1) Miscellaneous](tutorial-1-c-and-cubeide-setup/a1-preprocessor.md)
+  * [A2) Pointers](tutorial-1-c-and-cubeide-setup/a2-static-extern.md)
+  * [A3) Union](tutorial-1-c-and-cubeide-setup/a3-union.md)
+  * [A4) Pointers](tutorial-1-c-and-cubeide-setup/a4-pointers.md)
 
 * Classworks
   * [01) Matrix Addition](tutorial-1-c-and-cubeide-setup/classworks/classwork-1-matrix-addition.md)
@@ -48,13 +48,12 @@
 
 ## [TUTORIAL 2: Basic IO](tutorial-2-basic-io/README.md)
 
-* [Tutorial 2 Combined Notes](tutorial-2-basic-io/Tutorial-2-Combined.md)
-  * [01) Basic Code Structure](tutorial-2-basic-io/01-Basic-structure.md)
-  * [02) GPIO](tutorial-2-basic-io/02-GPIO.md)
-  * [03) HAL Clock and Timer](tutorial-2-basic-io/03-HAL-Clock.md)
-  * [04) TFT](tutorial-2-basic-io/04-TFT.md)
-  * [05) Setting up GPIO pin](tutorial-2-basic-io/05-Setting-up-GPIO-Pin.md)
-  * [06) Homework](tutorial-2-basic-io/06-Homework.md)
+* [01) Basic Code Structure](tutorial-2-basic-io/01-Basic-structure.md)
+* [02) GPIO](tutorial-2-basic-io/02-GPIO.md)
+* [03) HAL Clock and Timer](tutorial-2-basic-io/03-HAL-Clock.md)
+* [04) TFT](tutorial-2-basic-io/04-TFT.md)
+* [05) Setting up GPIO pin](tutorial-2-basic-io/05-Setting-up-GPIO-Pin.md)
+* [06) Homework](tutorial-2-basic-io/06-Homework.md)
 
 ## [TUTORIAL 3: Advanced IO](tutorial-3-advanced-io/README.md)
 
@@ -83,6 +82,7 @@
 
 * [Git Basics](advanced-notes/git-basics.md)
 * [Git Gud](advanced-notes/git-gud.md)
+
 * [Omniwheel](advanced-notes/omniwheel.md)
 * [Mecanum Wheel](advanced-notes/mecanum-wheel.md)
 * [PID](advanced-notes/pid.md)

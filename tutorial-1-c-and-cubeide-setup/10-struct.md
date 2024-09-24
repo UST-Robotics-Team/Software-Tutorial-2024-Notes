@@ -327,7 +327,7 @@ The stack object looks like the following:
 
 
 
-## Chekpoint : Classwork 4
+## Checkpoint : Classwork 4
 
 > We covered the materials needed for your **Classwork 4**! You can access it [here](classwork/classwork-4-greyscale-image.md). Let's do it before moving on again.
 

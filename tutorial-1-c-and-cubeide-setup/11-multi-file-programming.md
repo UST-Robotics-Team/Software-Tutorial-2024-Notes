@@ -160,7 +160,7 @@ This shows how we can save compilation time in a large project. The dependency i
 
 ## Circular Dependency 
 
-## Chekpoint : Classwork 5
+## Checkpoint : Classwork 5
 
 > We covered the materials needed for your **Classwork 5**! You can access it [here](https://github.com/UST-Robotics-Team/Software-Tutorial-2024-Notes/tree/main/tutorial-1-c-and-cubeide-setup/classwork/classwork-5-mean-median-min-max). Let's do it before moving on again.
 

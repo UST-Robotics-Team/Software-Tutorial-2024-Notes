@@ -183,7 +183,7 @@ We want to take the item at index `2`:
 ```
 And then we proceed to take the item at index `1`, which is `6`
 
-## Chekpoint : Classwork 1
+## Checkpoint : Classwork 1
 
 > We covered the materials needed for your **Classwork 1**! You can access it [here](classwork/classwork-1-matrix-addition.md). Let's do it before moving on again.
 
@@ -247,7 +247,7 @@ printf("My first program in C prints %s :)", hello);
 
 It will print `My first program in C prints Hello World! :)` (null character is removed upon insertion to the format string)
 
-## Chekpoint : Classwork 2
+## Checkpoint : Classwork 2
 
 > We covered the materials needed for your **Classwork 2**! You can access it [here](classwork/classwork-2-first-word.md). Let's do it before moving on again.
 

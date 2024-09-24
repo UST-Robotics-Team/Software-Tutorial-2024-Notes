@@ -252,7 +252,7 @@ Note that, in this case you must define a function at a location before it is ca
 
 If you would like to use `struct`s as the parameter, it is completely fine to do so.
 
-## Chekpoint : Classwork 3
+## Checkpoint : Classwork 3
 
 > We covered the materials needed for your **Classwork 3**! You can access it [here](classwork/classwork-3-area-of-circle.md). Let's do it before moving on again.
 
