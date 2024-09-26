@@ -42,7 +42,7 @@ The max is the biggest number in the set
 #### Assumption
 
 - There will be at most 300 numbers in the set.
-- The input numbers are inside `float` range and valid data will only be **positive numbers**.
+- The input numbers are inside `float` range and valid data will only be **non-negative numbers**.
 
 #### Example
 
@@ -57,10 +57,10 @@ Enter a number to append to the number set. Enter "-1" to stop appending.
 >0
 >2
 >-1
-Mean=3
-Median=2
-Min=0
-Max=9
+Mean=3.000000
+Median=2.000000
+Min=0.000000
+Max=9.000000
 ```
 
 ## How to compile and run the code
