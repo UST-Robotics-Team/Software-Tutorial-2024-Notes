@@ -78,7 +78,7 @@ Maximum Score:
 
 * The input for "show intermediate steps" accepts both lowercase and uppercase letter.
 * The input string only has 'A', 'B', 'C', and nothing else.
-* The maximum length of the input string is 300.
+* The maximum length of the input string is 200.
 
 > Note: There is a 5 seconds timeout. So, your code must finish running within 5 seconds
 
@@ -107,17 +107,18 @@ Maximum Score:
 #### Assumptions
 
 * The input for show intermediate steps accept both lowercase and uppercase letter.
-* ~~Some assumption is gone~~
-* The maximum length of the input string is 300.
-* When you have multiple choices to eliminate the letters, you should eliminate the string in the front first.
+* The input string only has 'A', 'B', 'C', and nothing else.
+* The maximum length of the input string is 200.
+* When you have multiple choices to eliminate the letters that scores the same point 
+    * You should prioritize the choice with the less steps 
+    * You should eliminate the string in the front first.
 * The output format of the steps is:
 
 ```
-<remaining string>' '    << if there is remaining string
-'+'<number of eliminated letters>
-'x'<combo multiplier>    << if there is combo multiplier
-' '<eliminated string>
-<next line>
+<remaining string> +<number of eliminated letters>x<combo multiplier> <eliminated string><next line>
+<remaining string> +<number of eliminated letters> <eliminated string><next line>
++<number of eliminated letters>x<combo multiplier> <eliminated string><next line>
++<number of eliminated letters> <eliminated string><next line>
 ```
 
 > Note: There is a 5 seconds timeout. So, your code must finish running within 5 seconds

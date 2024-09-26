@@ -91,6 +91,27 @@ However, for a quick link to all of them:
 
 ## Homeworks
 
-The homework of tutorial 1 will be released later
+Please submit these homeworks before 4 Oct 2024 (Fri) 18:00
+
+* [01) Number System Converter](homeworks/hw01-number-system-converter/README.md)
+* [02) Letter Chess](homeworks/hw02-letter-chess/README.md)
+* [03) Sand Tetris](homeworks/hw03-sand-tetris/README.md)
+
+#### Bonus
+
+It is a bonus. So, it is optional to do.
+
+* [B1) Score Attack](homeworks/hwB1-score-attack/README.md)
+  
+Submission Method: `Github Classroom`
+Please first accept the assignment on Github Classroom: [https://classroom.github.com/a/P863CrLD](https://classroom.github.com/a/P863CrLD) and the click the link to your working repository. Details of the submission will later be given there (note that the picture below is just for your reference, it is not your workspace link and the due date is wrong).
+
+![alt text](./images/accept.png)
+
+You can see the submission guidelines on the README shown below the file list. (i know the format below is broken but i decided to ignore it)
+
+![alt text](./images/submit_guide.png)
+
+<br/>
 
 [To Tutorial 2 Main Page](../tutorial-2-basic-io/README.md) 

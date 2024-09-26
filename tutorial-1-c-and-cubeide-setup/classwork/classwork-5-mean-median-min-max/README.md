@@ -20,12 +20,10 @@ The skeleton code is separated into multiple files:
 - `main.c` the main part of the code which handles the input of the set of numbers
 - `mean.c` the file that calculates the mean of the set of numbers 
 - `median.c` the file that calculates the median of the set of numbers 
-- `min.c` the file that calculates the min of the set of numbers 
-- `max.c` the file that calculates the max of the set of numbers 
+- `min_max.c` the file that calculates the min and max of the set of numbers 
 - `mean.h` the header file of `mean.c`
 - `median.h` the header file of `median.c`
-- `min.h` the header file of `min.c`
-- `max.h` the header file of `max.c`
+- `min_max.h` the header file of `min_max.c`
 
 The mean is the average value of a set of numbers.
 
@@ -65,3 +63,40 @@ Min=0
 Max=9
 ```
 
+## How to compile and run the code
+
+### Online Cpp
+
+[**Online Cpp**(https://online-cpp.com)](https://online-cpp.com) is a good online compiler for multi-file programming if you haven't install any compilers on your computer and you don't want to login your github account.
+
+***First, remember to switch to C instead of C++***
+
+![](../../../tutorial-0-self-learn-basic-c/images/online_cpp.png)
+
+Second, you can create new `.c` `.h` files by clicking the `+` button and rename the new files
+
+![](../../images/online-cpp-add-file.png)
+
+Thirdly, copy our given code from the `skeleton code` folder into online-cpp and start writing your code.
+
+Finally, press `Run` to run your code
+
+### Github Codespace
+
+To compile your program that has multiple `.c` files, you need to type `gcc` command.
+
+You can revise `gcc` command from our notes [11-multi-file-programming Separate Compilation](../../11-multi-file-programming.md#separate-compilation)
+
+or you can copy the `gcc` commands below and run it directly
+
+<details>
+
+<summary>gcc commands answer</summary>
+
+```
+gcc -c main.c mean.c median.c min_max.c
+gcc main.o mean.o median.o min_max.o
+.\a.exe
+```
+
+</details>
