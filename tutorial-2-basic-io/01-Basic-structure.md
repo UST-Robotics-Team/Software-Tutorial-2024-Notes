@@ -89,6 +89,8 @@ int main(void) {
     
 - Another Different the placeholder for user self-defined code. These zone created for allowing you to insert custom functionality without interfering with auto-generated code.
 
+    In your robot, you will need to enable a lot of different function / module / protocol during the development, and when are enable one things, you won't want to write all the control code(some code that is really directly connect to the hardware), (~~and you cannot actually~~).
+
     STM32CubeMX generates code with predefined sections for user modifications. This ensures that user code is preserved across code regenerations, which is required when there is any change in chip configurations.
     
     Therefore, you should always put you code inside those designated zone:
@@ -99,4 +101,7 @@ int main(void) {
         /* USER CODE END Init */
         // Your Code should NOT write here
     ```
+
+    ⚠️Take a look to the zone design inside the `main` `while` loop, it is kinda tricky there. 
+
 [Continue to The Next Page](./02-GPIO.md)

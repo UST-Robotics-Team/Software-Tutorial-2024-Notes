@@ -22,16 +22,16 @@ To simplify code readability and maintenance, meaningful names can be assigned t
 
 1.  Configuring the Macros:
 
-Inside `Main.h` , you can find:
+    Inside `Main.h` , you can find:
 
-```c
-/* Private defines -----------------------------------------------------------*/
-#define BTN1_Pin GPIO_PIN_3
-#define BTN1_GPIO_Port GPIOB
-/* USER CODE BEGIN Private defines */
-```
+    ```c
+    /* Private defines -----------------------------------------------------------*/
+    #define BTN1_Pin GPIO_PIN_3
+    #define BTN1_GPIO_Port GPIOB
+    /* USER CODE BEGIN Private defines */
+    ```
 
-⚠️Noted that your change here will be covered when you regenerate code thru CubeMX
+    ⚠️Noted that your change here will be covered when you regenerate code thru CubeMX
 
 2.  Update the Pinout Name inside CubeMX
     
@@ -43,12 +43,12 @@ Inside `Main.h` , you can find:
 
 ### GPIO Input
 
-With the correct configuration of GPIO, you would like to input and output. The library here we use is `HAL` Library 
+With the correct configuration of GPIO, you would like to input and output. The library here we use is `HAL` Library.
 
 The `HAL_GPIO_ReadPin` function reads the GPIO input.
 
 ```c
-/* stm32f4xx_hal_gpio.h */
+/* stm32f4xx_hal_gpio.h */ //HAL Standard Library
 GPIO_PinState HAL_GPIO_ReadPin(GPIO_TypeDef GPIOx, uint16_t GPIO_Pin);
 // usage
 uint8_t state = HAL_GPIO_ReadPin(BTN1_GPIO_Port, BTN1_Pin); // returns 0 or 1

@@ -2,16 +2,21 @@
 
 > Before you start working on your homework, remember to declare the function prototype first, please refer to the classwork instruction if you dun understand what I mean.
 
-## Q1: GPIO Configuration + Pneumatic Valve
+## Q1: GPIO Configuration + Line Following Sensor Module (4)
 > Actucally It Suppose to be the third classwork but I doubt if I can go thru all the things so I make it as homework to make both u and my life easiler.
 
-After the tutorial on how to set up a GPIO Pin, it is now for you to try out how to connect two Pneumatic Valve to the mainboard and then make a clamp. (We are not going to provide you high pressure air for safety issue.)
+So while we have covered you with the Pneumatic Valve as an usage of external GPIO, we designed this homework to introduce you about Line Following Sensor. Line Following Sensors commonly have two 'bulb', one to emit infrared rays (so I may say that is an IR Sensor) and another one used to received how many rays have been reflected to recognize black and white surface. 
 
-## Requirement:
-- You should connect the one Pneumatic Valve to the following pins: `PB8`
-- When you press one of the button, you should send a signal to the valve(i.e. the led of the valve should on)
-- Demo it to any helper
-> Ez right? So I say it suppose to be a classwork
+In your RDC, one of the robot you need to make would to fully auto to get something and then come back, and for the ease of you guys, we have draw lines to guide you from the starting point towards the end. Thus this task is give you a very very very brief idea how can you utilize the line.
+
+In the board for this homework, you should find two Line Following Sensor connected in **PA15** and **PB15** respectively, and denote **PA15** as Left Sensor and **PB15** as Right Sensor. In this Homework, you are suppose to simulate a Line Following Robot with only 2 sensors. The requirement are as follow:
+
+- When both of your Line Following Sensor detect white, print `Go Straight!!!`  (1)
+- When the Left Sensor detect black, print `Turn Left` (1)
+- When the Right Sensor detect black, print `Turn Right` (1)
+- When both Sensor detect black, print `Stop!` (1)
+
+Please ask Seniors for board for this task specifically as we don't have enough Line Following Sensor right now. And if you don't have the Black Line with you, just use your hand the block the 'bulb' of the sensors.
 
 --- 
 ## Q2: Tutorial 2 Homework
