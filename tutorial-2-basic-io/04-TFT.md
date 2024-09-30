@@ -3,8 +3,8 @@
 # TFT
 
 ## Printing Something
->Back in the days we learn programming, the integrated development environment (IDE) most likely provide you a console to output and you often use it for debugging and keep track with your programming progress. 
-And in different programming language, you can print / show your variable value using print function.
+
+When learning programming, most of the integrated development environment (IDE) you will/might have used will have a console for output and will often be used for debugging for you to keep track of certain variables and to trace-out truth tables or so forth.
 
 In C,
 
@@ -22,19 +22,12 @@ print("The value of c-squared is: ",c*c) # c**2
 #Output will come as "The value of c-squared is : 625"
 ```
 
-In Java,
-
-```java
-int c = 25;
-System.out.println("The value of c-squared is " + c*c);
-//Output will come as "The value of c-squared is : 625"
-```
-
 However in the Embed C Environment, you cannot direct access to the console of the C runtime and connect it to debugger is not always possible and is troublesome indeed. (Experience tell that debug the debugger is a painful experience)
 
 Therefore, we would like to make use of TFT (aka a small LCD monitor), to provide ourselves places to print out our variable and make our life easiler.
 
 ## Using the TFT
+
 ### `tft_init`
 
 ```c
@@ -46,14 +39,15 @@ void tft_init(TFT_ORIENTATION orientation, uint16_t bg_color, uint16_t text_colo
 tft_init(PIN_ON_TOP, BLACK, WHITE, YELLOW, DARK_GREEN);
 /* USER CODE END 2 */
 ```
+
 <details>
     <summary>Parameter Detail</summary>
 
-* orientation - _**Orientation of the monitor**_
-* bg\_color - _**Background color**_
-* text\_color - _**Text color**_
-* text\_color\_sp - _**Special Text color**_ - `[]`
-* highlight\_color - _**Highlight color**_ - `{}`
+- orientation - _**Orientation of the monitor**_
+- bg_color - _**Background color**_
+- text_color - _**Text color**_
+- text_color_sp - _**Special Text color**_ - `[]`
+- highlight_color - _**Highlight color**_ - `{}`
 
 The parameters have already been defined for you in `lcd.h` header-file. It is defined as follows:
 
@@ -93,6 +87,7 @@ You may choose one of the following colours according to your own desire for the
 ```
 
 ### **Example:**
+
 ```c
 /*
  * Initialisation Example
@@ -106,6 +101,7 @@ You may choose one of the following colours according to your own desire for the
 
 tft_init(PIN_ON_TOP, BLACK, WHITE, RED, DARK_GREEN);
 ```
+
 </details>
 
 ### **Print String**
@@ -114,10 +110,10 @@ tft_init(PIN_ON_TOP, BLACK, WHITE, RED, DARK_GREEN);
 void tft_prints(uint8_t x, uint8_t y, const char* fmt, ...);
 ```
 
-* **x**: nth horizontal column ranging from 0 to 15 (16 columns)
-* **y**: nth vertical row, ranging from 0 to 9 (10 rows)
-* **fmt**: string with format templates (same as C's printf)
-* **...** : variable to replace the placeholder in the string (same as C's printf)
+- **x**: nth horizontal column ranging from 0 to 15 (16 columns)
+- **y**: nth vertical row, ranging from 0 to 9 (10 rows)
+- **fmt**: string with format templates (same as C's printf)
+- **...** : variable to replace the placeholder in the string (same as C's printf)
 
 #### Example
 
@@ -128,21 +124,26 @@ tft_prints(0, 0, "The value of a is %d", a);
 ```
 
 ## Classwork 2: TFT
-* Print the time elapsed with the format of `mm:ss:sssZ` where `sssZ` means millisecond. e.g. `00:23:109` **(@2)**
-* Print a 50px \* 50px square directly under the elapsed time where its color changes when 1 second passed.**(@2)**
->Remember to add the function prototype before you call it.
-> ```c
-> /* main.c */
-> /* USER CODE BEGIN PFP */
-> void tft_classwork(void);
-> /* USER CODE END PFP */
-> ```
-> 
-Hints: Making use of mod and integer division.
+
+- Print the time elapsed with the format of `mm:ss:sssZ` where `sssZ` means millisecond. e.g. `00:23:109` **(@2)**
+- Print a 50px \* 50px square directly under the elapsed time where its color changes when 1 second passed.**(@2)**
+  > Remember to add the function prototype before you call it.
+  >
+  > ```c
+  > /* main.c */
+  > /* USER CODE BEGIN PFP */
+  > void tft_classwork(void);
+  > /* USER CODE END PFP */
+  > ```
+  >
+  > Hints: Making use of mod and integer division.
 
 ---
+
 ## More Application
+
 > Actually there is much more than that in the lcd.h and we have actually made brunches of different function to draw different stuff, but due to the time constraint, we are not going to cover here but you can take a look down below.
+
 <details>
 <summary>More Application</summary>
 
@@ -152,9 +153,9 @@ Hints: Making use of mod and integer division.
 void tft_print_pixel(uint16_t color, uint32_t x, uint32_t y);
 ```
 
-* **color** : colour of your pixel (Use the #define colours)
-* **x** : n-th horizontal pixel, ranging from 0 to 127
-* **y** : n-th vertical pixel , ranging from 0 to 159
+- **color** : colour of your pixel (Use the #define colours)
+- **x** : n-th horizontal pixel, ranging from 0 to 127
+- **y** : n-th vertical pixel , ranging from 0 to 159
 
 ### **Update**
 
@@ -165,7 +166,7 @@ uint8_t tft_update2(uint32_t period);
 // update the screen to print text and colors
 ```
 
-* **period** : period of update in ms
+- **period** : period of update in ms
 
 ### **Miscellaneous**
 
@@ -191,6 +192,7 @@ while(1){
     }
 }
 ```
+
 </details>
 
 [Continue to The Next Page](./05-Setting-up-GPIO-Pin.md)
