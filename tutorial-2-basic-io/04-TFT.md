@@ -123,30 +123,6 @@ tft_prints(0, 0, "The value of a is %d", a);
 // The value of a is 10
 ```
 
-## Classwork 2: TFT
-
-- Print the time elapsed with the format of `mm:ss:sssZ` where `sssZ` means millisecond. e.g. `00:23:109` **(@2)**
-- Print a 50px \* 50px square directly under the elapsed time where its color changes when 1 second passed.**(@2)**
-  > Remember to add the function prototype before you call it.
-  >
-  > ```c
-  > /* main.c */
-  > /* USER CODE BEGIN PFP */
-  > void tft_classwork(void);
-  > /* USER CODE END PFP */
-  > ```
-  >
-  > Hints: Making use of mod and integer division.
-
----
-
-## More Application
-
-> Actually there is much more than that in the lcd.h and we have actually made brunches of different function to draw different stuff, but due to the time constraint, we are not going to cover here but you can take a look down below.
-
-<details>
-<summary>More Application</summary>
-
 ### **Print Pixel**
 
 ```c
@@ -193,6 +169,21 @@ while(1){
 }
 ```
 
-</details>
+## Classwork 2: TFT
+
+- Print the time elapsed with the format of `mm:ss:sssZ` where `sssZ` means millisecond. e.g. `00:23:109` **(@2)**
+- Print a 50px \* 50px square directly under the elapsed time where its color changes when 1 second passed.**(@2)**
+  > Remember to add the function prototype before you call it.
+  >
+  > ```c
+  > /* main.c */
+  > /* USER CODE BEGIN PFP */
+  > void tft_classwork(void);
+  > /* USER CODE END PFP */
+  > ```
+  >
+  > Hints: Making use of mod and integer division.
+
+---
 
 [Continue to The Next Page](./05-Setting-up-GPIO-Pin.md)
