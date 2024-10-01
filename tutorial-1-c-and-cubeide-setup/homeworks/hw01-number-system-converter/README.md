@@ -29,6 +29,10 @@ Write a Number System Converter that converts a number from one system to anothe
 
 ## Example
 
+(Do not add an extra newline for the case of succesful conversion)
+
+![image](https://github.com/user-attachments/assets/4500fe44-e183-4b9c-88d8-76d69f30ddb8)
+
 This is an example that converts 123123123 from decimal to trinary:
 
 ```
@@ -67,12 +71,15 @@ However, if the user entered a wrong number system, an error message should be p
 
 Please enter a set of number:
 
+(Error messages has newlines at the end)
+
 ```
 Please enter a set of number:
 9999 
 Please enter the current number system:
 3
 Error! That set of number is not a trinary number.
+
 ```
 
 ```
@@ -81,6 +88,7 @@ ABCDEF
 Please enter the current number system:
 12 
 Error! That set of number is not a duodecimal number.
+
 ```
 
 ```
@@ -89,6 +97,7 @@ Please enter a set of number:
 Please enter the current number system:
 27
 Error! The number system is not supported.
+
 ```
 
 ## How to Run Your Code
