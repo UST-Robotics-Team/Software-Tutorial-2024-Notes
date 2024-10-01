@@ -15,7 +15,7 @@ uint32_t ticks = HAL_GetTick();
 ```
 
 - In STM32, the MCU has introduced an application time base that increments every 1 ms. Using `HAL_GetTick()` returns the time base (in ms) since the mainboard was powered on.
-- You can think of the MCU as holding a stopwatch that starts when the MCU begins running, and `HAL_GetTick()` provides the current reading of this stopwatch.
+- You can think of the MCU as holding a stopwatch that starts when the MCU begins running, and `HAL_GetTick()` is ask the stopwatch what is the counting right now
 
 ```c
 void HAL_Delay(uint32_t Delay);
@@ -41,7 +41,7 @@ void HAL_Delay(uint32_t Delay);
   }
   ```
 
-- A LED turn on 100ms after u press the button:
+- A LED turn on 100ms after u first time press the `BTN1`:
   ```c
   while (1) {
       static uint32_t last_ticks = 0;
@@ -50,13 +50,85 @@ void HAL_Delay(uint32_t Delay);
           BTN_Pressed = 1;
           last_ticks = HAL_GetTick();
       }
-      if(BTN_Pressed && (HAL_GetTick() - last_ticks) >= 100){
+      if(BTN_Pressed && (HAL_GetTick() - last_ticks) <= 100){
           led_on(LED1);
       }
+      else if(BTN_Pressed){
+        led_off(LED1);
+      }
   }
-  ```
+  ``` 
 
-## Action that constantly repeat
+### Demo 2: Writing Code in a function 
+While you might only need to write tens of code to finish different classwork and homework, in real life you would write thousands line of code , and so it is important for you to write your code in different functions.
+
+In today tutorial, you should put all your code in the four function we give to you in `tutorial2_hw.c`, here I would provide you an example of how it works
+
+1. Write what you want it to do every loop:
+   - Assume the task is Flashing the `LED3` (toggle every 100ms) for 1 seconds after the `BTN2` is pressed
+    ```c
+    /* tutorial2_hw.c*/
+    void gpio_classwork(void) {
+    /* Your code start here */
+        // You should use static uint32_t here, as any variable that defined in main.c cannot call here unless you extern it
+        static uint32_t last_ticks_btn = 0;
+        static uint32_t last_ticks_led = 0;
+        if (HAL_GetTick() - last_ticks_btn > 1000){ 
+            // Current Cycle of Acttion that BTN1 is ended
+            led_off(LED3)
+            if (btn_read(BTN2)){
+                last_ticks_btn = HAL_GetTick();
+            }
+        }
+        else {
+            // Inside the Flashing Cycle
+            if (HAL_GetTick() - last_ticks_led > 100){
+                led_toggle(LED3);
+                last_ticks_led = HAL_GetTick();
+            }
+        }        
+    /* Your code end here */
+    }
+    ```
+
+2. After you have written your program in `tutorial2_hw.c`, you would like to call it in your main loop.
+   - Before calling it, you need to have declared this function before the `main` function. 
+   - Normally we will do by include a corrsponding `.h` of that `.c`, but as we forogr to give you this.
+   - So you can directly put the function prototype (function declaration) in the top of your `main.c`
+        ```c
+        /* main.c */
+        /* USER CODE BEGIN PFP */
+        void gpio_classwork(void);
+        /* USER CODE END PFP */
+        ```
+3. After you have done all these, you can directly call the function in your `main.c`:
+   ```c 
+    /* main.c::int main() */
+
+    /* USER CODE BEGIN WHILE */
+    while(1){
+        gpio_classwork();
+        /* USER CODE END WHILE */
+
+        /* USER CODE BEGIN 3 */
+    }
+    /* USER CODE END 3 */
+   ```
+> Some of you may apply another `while` loop in your function for this purpose:
+> ```c
+>   if (btn_read(BTN2)){
+>       static uint32_t last_ticks_BTN = 0;
+>       last_ticks_BTN = HAL_GetTick();
+>       while (HAL_GetTick - last_ticks_BTN < 1000){
+>           //Code for Toggle LED
+>       }
+>   }
+> ```
+> While the solution work fine under this single task context, it will create problem in a lot of way, consider this, your robot may have a lot of things to do at the same time, for example, Flashing LED and also control the pnematic valve at the same time. Using this code, you **cannot do anything** when you flashing the LED for 1 second, which is not perferable. \
+> This also the reason we tell you guys to never use `HAL_Delay()`
+
+
+<!-- ## Action that constantly repeat
 
 ### Program Structure:
 
@@ -89,9 +161,9 @@ int main(void)
 ```
 
 - In the example above, we do something every 100 ms and another thing every 60 ms. Since they are only an if-statement, there won't be any while loops/ for loops that prevent the other tasks from doing their tasks.
-- This structure is easy and keep your MCU active all the time to do whatever you want it to do.
+- This structure is easy and keep your MCU active all the time to do whatever you want it to do. -->
 
-### HAL_Delay
+<!-- ### HAL_Delay
 
 Some of you may find that a `HAL_Delay()` function exists, and use it in your code like so:
 
@@ -133,18 +205,13 @@ while((HAL_GetTick() - tickstart) < wait)
 }
 
 ````
- </details>
+ </details> -->
 
 ## Classwork 1: GPIO and HAL
 To make our code more readable and make things more organized, we have provided separate functions for you to work in.
-You should write your code there in the respective functions and call the functions in the `main.c` \
-Remember to add the function prototype before you call it.
-```c
-/* tutorial2_hw.c */
-/* USER CODE BEGIN PFP */
-void gpio_classwork(void);
-/* USER CODE END PFP */
-````
+You should write your code there in the respective functions and call the functions in the `main.c` 
+
+> As we have included the function prototype of the `gpio_classwork()` in the previous demo, you don't need do that for this classwork.
 
 - When `BTN1` is held, `LED1` should be on. **(@1)**
 - When `BTN2` is held, `LED1` should be flashing (toggle in 50ms).**(@1)**

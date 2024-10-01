@@ -2,6 +2,9 @@
 
 # Basic STM32 Configuration
 
+> Please be **noted** that we are domostrating how to set up a new
+GPIO **OUTPUT** pins for air cylinder, for your homework, you are working on a limit switch / Line Following sensors, that's is a **INOUT**, so the set up would be differ.
+
 Throughout your RDC journey, you will not need to configure all pinouts and function modules from scratch due to the many technical considerations involved. We have already provided you with a mostly completed configuration file called "SW Tutorial," which includes commonly used functionalities such as CAN, LED, TFT, and PWM.
 However, you may still need to utilize some GPIO pins, and we cannot predict what and where you will connect to the board. Therefore, we will introduce some basic skills for setting up GPIO pins.
 
@@ -33,14 +36,58 @@ When you click the `.ioc` file, you will enter an interface similar to this:
    ![](./image/PC0_Config.png)
    - Inside this configuration window, you can choose different settings for the GPIO pin. Ideally, you should not need to change anything from the default configuration for a `GPIO Output` pin.
    - You can (and should) also rename the pin with a meaningful name. As mentioned in `02-GPIO.md`, CubeMX will generate the appropriate macro based on the name you enter, so you should rename it here instead of manually writing a macro.
-4. **Save your configuration and Generate Code**: As mentioned, you need to save and generate code before you can make your change effective. In CubeMX under CubeIDE, you just need to save your change by click `Ctrl + S` ~~(mac ppl help yourself)~~ and click **YES** in the following Pop-up Windows.
+4. **Save your configuration and Generate Code**:\
+  As mentioned, you need to save and generate code before you can make your change effective. In CubeMX under CubeIDE, you just need to save your change by click `Ctrl + S` ~~(mac ppl help yourself)~~ and click **YES** in the following Pop-up Windows.
    ![](./image/Generate_Code.png)
+5. **Bug Fixing**:
+   - Comment the `MX_SPI_Init()` in `main.c`, due to some compilated reason, we have init the SPI in `tft_init()` and so double init may possibiy lead to some issue, therefore please help yourself and comment out this line:
+      ```c
+        /* main.c */
+        /* Initialize all configured peripherals */
+        MX_GPIO_Init();
+        MX_DMA_Init();
+        MX_CAN2_Init();
+        // MX_SPI1_Init(); //Help us Comment out this line
+        MX_USART1_UART_Init();
+        MX_I2C2_Init();
+        MX_CAN1_Init();
+        MX_USART2_UART_Init();
+        MX_TIM5_Init();
+      ``` 
+   - As the `tft_update()` is accidently put outside the designed zone for some destribution, your `tft_update()`, Please add the `tft_update(1)` in your main `while` loop if you don't find it there
 
-Once configured, you can call the GPIO Pin using the macros we defined earlier and control your Air Cylinder.
+## How to use the pins
+
+After you generate the code, STM CubeIDE suppose will lead you back to the `main.c` or may be some other `.c` / `.h` files, if you want to check whther your code is generated correctly, you can do this:
+
+Go to your `main.h`, you shoould able to find this:
+```c
+#define {the pin name you put}_Pin GPIO_Pin_{the pin number}
+#define {the pin name you put}_GPIO_Port GPIO{The Pin Group}
+```
+For example I name my new pins as `Valve`, then in my `main.h` I find this:
+```c
+#define Valve_Pin GPIO_PIN_8
+#define Valve_GPIO_Port GPIOB
+```
+> Please check if you do anything wrong if you cannot find or ask our senior, please **DO NOT** manually add this if you cannot find this!
+
+After you confirm you have added this new pins, you can use it like how we use it before:
+
+```c
+// If it is a GPIO Output Pin, you can:
+gpio_set(Valve); // Set the pin to HIGH
+gpio_reset(Valve); // Reset the pin to LOW
+gpio_toggle(Valve); // Toogle the pin
+
+// If it is a GPIO Input Pin, you can:
+uint8_t state = gpio_read(Valve);
+```
+At the meantime, we are not encouraged to use the `btn_read()` or `led_on()` or `led_off()` as we have mentioned before, we have flip the value of 0 and 1 for led and btn due to the hardware design, and so it may work somehow counter initative if you use it here.
 
 ---
-
-### Extended Reading: GPIO Input Mode
+> Here are some extended explanation about different mode of GPIO Input and Output, you can try understanding what is happening but no worries if you cannot understand all.
+# Extended Reading: GPIO Input Mode
 
 - As we have mentioned, our GPIO only receive discrete 0/1 signal, so it is trivial enough when we have a GND / 3.3V(out TTL is set to be 3.3V) given to the port, but what if it is not connected to anything?
 - When it is not connected to anything, it is the case we say it is in a floating state, and it will lead to a unpredictable readings due to noise.

@@ -6,20 +6,31 @@
 
 > Actually this originally is the third classwork but I doubt if I can go thru all the things so I make it as homework to make both u and my life easier.
 
-So while we have covered you with the Pneumatic Valve as an usage of external GPIO, we designed this homework to introduce you about Line Following Sensor. Line Following Sensors commonly have two 'bulb', one to emit infrared rays (so I may say that is an IR Sensor) and another one used to received how many rays have been reflected to recognize black and white surface.
+> While we oroinigally designed a simplifed ELEC 1100 Line follower, we are now simpily it and you can take a look of the original one here:
+> <details>
+> <Summary>Original Homework , No Need to Do now</Summary>
+> So while we have covered you with the Pneumatic Valve as an usage of external GPIO, we designed this homework to introduce you about Line Following Sensor. Line Following Sensors commonly have two 'bulb', one to emit infrared rays (so I may say that is an IR Sensor) and another one used to received how many rays have been reflected to recognize black and white surface.
+>
+> In your RDC, one of the robot you need to make would to fully auto to get something and then come back, and for the ease of you guys, we have draw lines to guide you from the starting point towards the end. Thus this task is give you a very very very brief idea how can you utilize the line.
+>
+> In the board for this homework, you should find two Line Following Sensor connected in **PA15** and **PB15** respectively, and denote **PA15** as Left Sensor and **PB15** as Right Sensor. In this Homework, you are suppose to simulate a Line Following Robot with only 2 sensors. The requirement are as follow:
+>
+>- When both of your Line Following Sensor detect white, print `Go Straight!!!` (1)
+>- When the Left Sensor detect black, print `Turn Left` (1)
+>- When the Right Sensor detect black, print `Turn Right` (1)
+>- When both Sensor detect black, print `Stop!` (1)
+>
+>Please ask Seniors for board for this task specifically as we don't have enough Line Following Sensor right now. And if you don't have the Black Line with you, just use your hand the block the 'bulb' of the sensors.
+>
+>Since we don't have enough Line Following Sensor, some of you might receive limit switches(it works like a button). We will treat Limit switch pressed = Line Following sensor detect black
+> </details>
 
-In your RDC, one of the robot you need to make would to fully auto to get something and then come back, and for the ease of you guys, we have draw lines to guide you from the starting point towards the end. Thus this task is give you a very very very brief idea how can you utilize the line.
 
-In the board for this homework, you should find two Line Following Sensor connected in **PA15** and **PB15** respectively, and denote **PA15** as Left Sensor and **PB15** as Right Sensor. In this Homework, you are suppose to simulate a Line Following Robot with only 2 sensors. The requirement are as follow:
+As the objective of this homework is to give you a try on setting up new GPIO Pins, therefore now you are required to set up a GPIO on the targeted pin that pluged in a limit switch (Please ask senior if you cannot understand what pin it is)
 
-- When both of your Line Following Sensor detect white, print `Go Straight!!!` (1)
-- When the Left Sensor detect black, print `Turn Left` (1)
-- When the Right Sensor detect black, print `Turn Right` (1)
-- When both Sensor detect black, print `Stop!` (1)
+And you should print `Input Detected` when the switch is pressed and print nothing when it is not pressed.
 
-Please ask Seniors for board for this task specifically as we don't have enough Line Following Sensor right now. And if you don't have the Black Line with you, just use your hand the block the 'bulb' of the sensors.
-
-Since we don't have enough Line Following Sensor, some of you might receive limit switches(it works like a button). We will treat Limit switch pressed = Line Following sensor detect black
+You may refer to the last notes about how t set up GPIO Pins, keep in mind that the example there is setting up `GPIO Output` while here you are doing `GPIO_Input`
 
 ---
 

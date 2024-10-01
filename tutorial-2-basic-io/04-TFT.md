@@ -89,6 +89,7 @@ You may choose one of the following colours according to your own desire for the
 ### **Example:**
 
 ```c
+void tft_init(TFT_ORIENTATION orientation, uint16_t bg_color, uint16_t text_color, uint16_t text_color_sp, uint16_t highlight_color);
 /*
  * Initialisation Example
  *
@@ -172,17 +173,29 @@ while(1){
 ## Classwork 2: TFT
 
 - Print the time elapsed with the format of `mm:ss:sssZ` where `sssZ` means millisecond. e.g. `00:23:109` **(@2)**
-- Print a 50px \* 50px square directly under the elapsed time where its color changes when 1 second passed.**(@2)**
-  > Remember to add the function prototype before you call it.
-  >
-  > ```c
-  > /* main.c */
-  > /* USER CODE BEGIN PFP */
-  > void tft_classwork(void);
-  > /* USER CODE END PFP */
-  > ```
-  >
-  > Hints: Making use of mod and integer division.
+- Toogle the highlight of the text you print every seconds, which means: **(@2)**
+  - 1st second: print normal text
+  - 2nd second: print hightlighted text
+    - Recall1: 
+      ```c
+      tft_prints(0, 2, "{Hello World}");  
+      // This is a higlighted text
+      ```
+    - Recall2: We define the colour of hightlight in `tft_init`:
+      ```c
+      void tft_init(TFT_ORIENTATION orientation, uint16_t bg_color, uint16_t text_color, uint16_t text_color_sp, uint16_t highlight_color);
+      ```
+  - 3rd second: print normal text
+> Remember to add the function prototype before you call it.
+>
+> ```c
+> /* main.c */
+> /* USER CODE BEGIN PFP */
+> void tft_classwork(void);
+> /* USER CODE END PFP */
+> ```
+>
+> Hints: Making use of mod and integer division.
 
 ---
 

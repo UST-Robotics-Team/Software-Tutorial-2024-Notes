@@ -118,6 +118,31 @@ uint8_t btn1_state = !gpio_read(BTN1);
 
 If one day your hardware groupmate accidentally swapped the wires of all LEDs, you can simply change the defines above. You don't need to read through your hundreds/thousands of lines of code and change every `gpio_set()` `gpio_reset()` and `gpio_read()` you wrote.
 
+### Demo 1: Basic GPIO
+Before we start coding, please go to `main.h` and edit the line 133:\
+Change from `#define btn_read(btn) gpio_read(btn)` \
+To `#define btn_read(btn) !gpio_read(btn)`
+
+
+For example I would like to turn on the `LED2` when I press `BTN2`, what I can do would be :
+```c
+/*main.c*/
+while(1){
+    if btn_read(BTN2){
+        led_on(LED2);
+    }
+    else {
+        led_off(LED2);
+    }
+}
+```
+After you edit your code and you are waiting the board from your peers, you can first compile your code to see if there is any copilation error:\
+You can press the "Hammer" on the top bar of the interface
+![](./image/Compiler_hammer.png)
+And then your code will be compiled and you can check if there is any problem.
+
+---
+
 ### Further Application: Pneumatic Valve
 
 Another application you more likely to use for GPIO is pneumatic valves.
