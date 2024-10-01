@@ -1,4 +1,4 @@
-# Task 3 Skeleton Code
+# Skeleton Code
 
 > Please don't include any extra libraries in your homework. We already included
 > all necessary libraries in the skeleton code.
