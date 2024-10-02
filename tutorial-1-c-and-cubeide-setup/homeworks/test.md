@@ -4,7 +4,7 @@ This guideline explains how to use the checking tools given
 
 (Unfortunately we haven't tested this on Mac, please inform us for any issue.)
 
-1. Download [test.sh](./test.sh) if you are working on Codespaces/Unix-based OS (Mac or Linux) or [test.bat](./test.bat) if you are working on Windows and place it at the same level as the `hw` folders.
+1. Download [test.sh](./test.sh) if you are working on Codespaces/Unix-based OS (Mac or Linux) or [test.bat](./test.bat) if you are working on Windows and place it at the same level as the `hw1`, `hw2`, ... folders.
 
    Download using the button on the top right side
 
@@ -15,7 +15,7 @@ This guideline explains how to use the checking tools given
    ![image](https://github.com/user-attachments/assets/76707f5b-9ddb-40b6-a701-717aff221982)
 
 
-2. Download the given testcase folder zip [here](./testing.zip) and place it at the same level as the `hw` folders
+2. Download the given testcase folder zip [here](./testing.zip) and place it at the same level as the `hw1`, `hw2`, ... folders
 
     Similarly, download here:
 
