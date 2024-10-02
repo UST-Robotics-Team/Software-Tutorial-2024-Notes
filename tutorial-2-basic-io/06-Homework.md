@@ -2,7 +2,7 @@
 
 > Before you start working on your homework, remember to declare the function prototype first, please refer to the classwork instruction if you dun understand what I mean.
 
-## Q1: GPIO Configuration + Line Following Sensor Module (4)
+## Q1: GPIO Configuration + Line Following Sensor Module (2)
 
 > Actually this originally is the third classwork but I doubt if I can go thru all the things so I make it as homework to make both u and my life easier.
 
