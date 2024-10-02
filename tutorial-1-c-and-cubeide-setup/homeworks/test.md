@@ -19,14 +19,14 @@ You have two options:
 
 4. Run the following command to run the .sh or .bat file (if you feel suspicious, you may check the content of the files before running)
 
-On Codespaces/Unix-based OS (Mac or Linux)
-```
-chmod +x ./test.sh && ./test.sh
-```
-(`chmod` is needed to give permission for the execution of the file)
-
-On Windows
-```
-./test.bat
-```
-(If windows stops you from running the bat file, you can either confirm that you still want to run the file, or copy the content of test.bat, then deleting test.bat, make you own test.bat file and paste the content :) )
+  On Codespaces/Unix-based OS (Mac or Linux)
+  ```
+  chmod +x ./test.sh && ./test.sh
+  ```
+  (`chmod` is needed to give permission for the execution of the file)
+  
+  On Windows
+  ```
+  ./test.bat
+  ```
+  (If windows stops you from running the bat file, you can either confirm that you still want to run the file, or copy the content of `test.bat`, then deleting `test.bat`, make you own test.bat file and paste the content :) )
