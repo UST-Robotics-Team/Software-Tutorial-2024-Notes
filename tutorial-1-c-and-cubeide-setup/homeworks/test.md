@@ -9,7 +9,7 @@ You have two options:
 
 <insert-image-later-here>
 
-2. Download the given testcase folder zip [here](./testcases.zip) and place it at the same level as the `hw` folders
+2. Download the given testcase folder zip [here](./testing.zip) and place it at the same level as the `hw` folders
 
 <insert-image-later-here>
 
