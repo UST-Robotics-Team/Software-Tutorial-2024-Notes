@@ -26,7 +26,7 @@ This guideline explains how to use the checking tools given
     ![image](https://github.com/user-attachments/assets/00de3311-247d-4907-8b04-52bd415fd632)
 
 
-3. Unzip the testcase folder (On windows, right click on the file instead from File Explorer)
+3. Unzip the testcase folder (On Windows, right click on the file instead from File Explorer)
 
     ![image](https://github.com/user-attachments/assets/4f2bae14-0155-468a-ace3-c389dc478e84)
 
@@ -45,7 +45,7 @@ This guideline explains how to use the checking tools given
      ```
      ./test.bat
      ```
-     (If windows stops you from running the bat file, you can either confirm that you still want to run the file, or copy the content of `test.bat`, then deleting `test.bat`, make you own `test.bat` file and paste the content :) )
+     (If Windows stops you from running the bat file, you can either confirm that you still want to run the file, or copy the content of `test.bat`, then deleting `test.bat`, make you own `test.bat` file and paste the content :) )
 
 
 5. After running, you will see a folder named `result`. You then need to compare the content of this file to the one provided in `testing`. If you would like to compare Homework 1 Testcase 1, then compare `result/hw1/out01.txt` and `testing/hw1/output01.txt`
