@@ -45,16 +45,18 @@ void HAL_Delay(uint32_t Delay);
   ```c
   while (1) {
       static uint32_t last_ticks = 0;
-      static uint8_t BTN_Pressed = 0;
-      if (!BTN_Pressed && btn_read(BTN1)){ //Only when never pressed
-          BTN_Pressed = 1;
+      static uint8_t btn_pressed = 0;
+      if (!btn_pressed && btn_read(BTN1)){ //Only when never pressed
+          btn_pressed = 1;
           last_ticks = HAL_GetTick();
       }
-      if(BTN_Pressed && (HAL_GetTick() - last_ticks) <= 100){
-          led_on(LED1);
-      }
-      else if(BTN_Pressed){
-        led_off(LED1);
+      if (btn_pressed){
+        if ((HAL_GetTick() - last_ticks) <= 100){
+            led_on(LED1);
+        }
+        else {
+            led_off(LED1);
+        }
       }
   }
   ``` 
@@ -65,7 +67,8 @@ While you might only need to write tens of code to finish different classwork an
 In today tutorial, you should put all your code in the four function we give to you in `tutorial2_hw.c`, here I would provide you an example of how it works
 
 1. Write what you want it to do every loop:
-   - Assume the task is Flashing the `LED3` (toggle every 100ms) for 1 seconds after the `BTN2` is pressed
+   1. During the 1 - 2 second: `LED3` is flashing (toggle every 100 ms)
+   2. During the 3 - 4 second: Only turn on `LED4` 
     ```c
     /* tutorial2_hw.c*/
     void gpio_classwork(void) {
@@ -73,19 +76,20 @@ In today tutorial, you should put all your code in the four function we give to 
         // You should use static uint32_t here, as any variable that defined in main.c cannot call here unless you extern it
         static uint32_t last_ticks_btn = 0;
         static uint32_t last_ticks_led = 0;
-        if (HAL_GetTick() - last_ticks_btn > 1000){ 
-            // Current Cycle of Acttion that BTN1 is ended
-            led_off(LED3)
-            if (btn_read(BTN2)){
-                last_ticks_btn = HAL_GetTick();
-            }
-        }
-        else {
+        if (HAL_GetTick() - last_ticks_btn <= 2000){ 
             // Inside the Flashing Cycle
+            led_off(LED4);
             if (HAL_GetTick() - last_ticks_led > 100){
                 led_toggle(LED3);
                 last_ticks_led = HAL_GetTick();
             }
+        }
+        else if ((HAL_GetTick() - last_ticks_btn > 2000) && (HAL_GetTick() - last_ticks_btn < 4000)) {
+            led_off(LED3);
+            led_on(LED4);
+        }
+        else {
+            last_ticks_btn = HAL_GetTick();
         }        
     /* Your code end here */
     }

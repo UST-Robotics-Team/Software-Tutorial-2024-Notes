@@ -23,10 +23,10 @@ Homeworks: show your working mainboard to our seniors in Hall 9 Lab after the tu
 
 ## Tutorial 2 Links
 
-* [Tutorial 2 Combined Notes](Tutorial-2-Combined.md)
-    * [Basic Code Structure](01-Basic-structure.md)
-    * [GPIO](02-GPIO.md)
-    * [HAL Clock and Timer](03-HAL-Clock.md)
-    * [TFT](04-TFT.md)
-    * [Setting up GPIO pin ](05-Setting-up-GPIO-Pin.md)
-    * [Homework](06-Homework.md)
+
+* [Basic Code Structure](01-Basic-structure.md)
+* [GPIO](02-GPIO.md)
+* [HAL Clock and Timer](03-HAL-Clock.md)
+* [TFT](04-TFT.md)
+* [Setting up GPIO pin ](05-Setting-up-GPIO-Pin.md)
+* [Homework](06-Homework.md)
