@@ -25,7 +25,7 @@ Unfortunately we haven't tested this on Mac, please inform us for any issue.
     ![image](https://github.com/user-attachments/assets/00de3311-247d-4907-8b04-52bd415fd632)
 
 
-3. Unzip the testcase folder
+3. Unzip the testcase folder (On windows, right click on the file instead from File Explorer)
 
     ![image](https://github.com/user-attachments/assets/4f2bae14-0155-468a-ace3-c389dc478e84)
 
