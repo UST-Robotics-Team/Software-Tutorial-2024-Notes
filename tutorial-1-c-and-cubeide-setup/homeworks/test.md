@@ -9,7 +9,7 @@ Unfortunately we haven't tested this on Mac, please inform us for any issue.
 
    ![image](https://github.com/user-attachments/assets/22b27244-0a18-480a-9149-61844e7721d0)
 
-   Put it in this part of the directory:
+   Put it in this part of the directory (same level as `hw1`, `hw2`, ...):
 
    ![image](https://github.com/user-attachments/assets/76707f5b-9ddb-40b6-a701-717aff221982)
 
