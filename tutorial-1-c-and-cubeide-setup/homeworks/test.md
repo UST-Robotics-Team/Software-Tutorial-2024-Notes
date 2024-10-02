@@ -20,7 +20,7 @@ Unfortunately we haven't tested this on Mac, please inform us for any issue.
 
     ![image](https://github.com/user-attachments/assets/32fb562d-9e8a-4d1e-aba9-356e2d073b22)
 
-    Put it in this part of the directory:
+    Put it in this part of the directory (same as `test.sh`):
 
     ![image](https://github.com/user-attachments/assets/00de3311-247d-4907-8b04-52bd415fd632)
 
