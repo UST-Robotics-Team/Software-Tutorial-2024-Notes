@@ -44,7 +44,7 @@ Unfortunately we haven't tested this on Mac, please inform us for any issue.
      ```
      ./test.bat
      ```
-     (If windows stops you from running the bat file, you can either confirm that you still want to run the file, or copy the content of `test.bat`, then deleting `test.bat`, make you own test.bat file and paste the content :) )
+     (If windows stops you from running the bat file, you can either confirm that you still want to run the file, or copy the content of `test.bat`, then deleting `test.bat`, make you own `test.bat` file and paste the content :) )
 
 
 5. After running, you will see a folder named `result`. You then need to compare the content of this file to the one provided in `testing`. If you would like to compare Homework 1 Testcase 1, then compare `result/hw1/out01.txt` and `testing/hw1/output01.txt`
