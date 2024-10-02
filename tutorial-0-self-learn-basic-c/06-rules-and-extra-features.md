@@ -66,14 +66,14 @@ To include standard integer types, use `#include <stdint.h>`
 
 |    Short Form    |    Full Name    | Meaning | Range |  
 | :-----: | :-----: | :-----: | :-----: |
-| `uint8_t` | unsigned char | unsigned 8 bits integer | $[0, 2^8]$|
-|`uint16_t` | unsigned short | unsigned 16 bits integer | $[0, 2^{16}]$
-|`uint32_t` | unsigned long | unsigned 16 bits integer | $[0, 2^{32}]$
-|`uint16_t` | unsigned long long | unsigned 16 bits integer | $[0, 2^{64}]$
+| `uint8_t` | unsigned char | unsigned 8 bits integer | $[0, 2^8-1]$|
+|`uint16_t` | unsigned short | unsigned 16 bits integer | $[0, 2^{16}-1]$
+|`uint32_t` | unsigned long | unsigned 16 bits integer | $[0, 2^{32}-1]$
+|`uint64_t` | unsigned long long | unsigned 16 bits integer | $[0, 2^{64}-1]$
 | `int8_t` | signed char | unsigned 8 bits integer | $[-2^7, 2^7 - 1]$|
 |`int16_t` | signed short | unsigned 16 bits integer | $[- 2^{15}, 2^{15} - 1]$
 |`int32_t` | signed long | unsigned 16 bits integer | $[- 2^{31}, 2^{31} - 1]$
-|`int16_t` | signed long long | unsigned 16 bits integer | $[ - 2^{63}, 2^{63}-1]$
+|`int64_t` | signed long long | unsigned 16 bits integer | $[ - 2^{63}, 2^{63}-1]$
 
 Note that it is common to see these types in our robot codes.
 
