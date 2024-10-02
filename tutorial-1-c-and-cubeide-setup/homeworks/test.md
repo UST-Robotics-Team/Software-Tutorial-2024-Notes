@@ -1,7 +1,8 @@
 # Checking Tools Guideline
 
 This guideline explains how to use the checking tools given
-Unfortunately we haven't tested this on Mac, please inform us for any issue.
+
+(Unfortunately we haven't tested this on Mac, please inform us for any issue.)
 
 1. Download [test.sh](./test.sh) if you are working on Codespaces/Unix-based OS (Mac or Linux) or [test.bat](./test.bat) if you are working on Windows and place it at the same level as the `hw` folders.
 
