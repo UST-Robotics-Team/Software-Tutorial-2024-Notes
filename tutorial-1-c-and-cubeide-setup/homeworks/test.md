@@ -4,7 +4,7 @@
 
 Please update your `utility.c` in your HW3 code. Although it is informed that it is okay to submit the old version of `utility.c`, I am not sure that it will work for this testing tool as it receives input from files and I am not sure it will work without fixing the `\r\n` issue.
 
-Please find the new version of `utility.c` [here](../hw03-top-down-platformer/
+Please find the new version of `utility.c` [here](./../hw03-top-down-platformer/
 utility.c), please copy it directly to your `utility.c` (you are allowed to modify it for this purpose).
 
 ## Testing Tool
