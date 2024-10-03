@@ -30,8 +30,11 @@ As the objective of this homework is to give you a try on setting up new GPIO Pi
 
 And you should print `Input Detected` when the switch is pressed and print nothing when it is not pressed.
 
-You may refer to the last notes about how t set up GPIO Pins, keep in mind that the example there is setting up `GPIO Output` while here you are doing `GPIO_Input`
+You may refer to the last notes about how to set up GPIO Pins, keep in mind that the example there is setting up `GPIO Output` while here you are doing `GPIO_Input`
 
+
+Notes for Setting up Pins:
+- Please plug the limit switch to those pins on the right hand side instead of left hand side.
 ---
 
 ## Q2: Tutorial 2 Homework
