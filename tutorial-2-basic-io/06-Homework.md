@@ -35,6 +35,8 @@ You may refer to the last notes about how to set up GPIO Pins, keep in mind that
 
 Notes for Setting up Pins:
 - Please plug the limit switch to those pins on the right hand side instead of left hand side.
+- Correct Pin Naming Picture:
+  ![](./image/Mainboard_pin.jpg)
 ---
 
 ## Q2: Tutorial 2 Homework
