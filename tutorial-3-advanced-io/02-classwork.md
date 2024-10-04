@@ -11,7 +11,7 @@ Find 3 possible combinations of prescaler value and auto-reload values for contr
 
 > Hint: *** Remember they are `uint16_t` . So, they can only be 0 to 65535***
 
-[Back to notes](01-pwm-and-servo.md#timer)
+[Back to notes](02-pwm-and-servo.md#timer)
 
 ## Classwork 2
 
@@ -21,7 +21,7 @@ Calculate the CCR value for moving the servo to -90, 0, and 90 degree. (1 ms, 1.
 
 > Yes, this is another MATH question.
 
-[Back to notes](01-pwm-and-servo.md#channel)
+[Back to notes](02-pwm-and-servo.md#channel)
 
 ## Classwork 3
 
@@ -33,4 +33,4 @@ Try to control servo motor to turn to -90 degrees-> 0 degrees -> 90 degrees (wit
 
 > Note: We are using TIM5 and channel 1
 
-[Back to notes](01-pwm-and-servo.md#start-coding!!!)
+[Back to notes](02-pwm-and-servo.md#start-coding!!!)

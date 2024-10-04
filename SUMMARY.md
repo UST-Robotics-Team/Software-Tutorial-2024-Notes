@@ -57,9 +57,10 @@
 
 ## [TUTORIAL 3: Advanced IO](tutorial-3-advanced-io/README.md)
 
-* [01) PWM and Servo motor](tutorial-3-advanced-io/01-pwm-and-servo.md)
-* [02) Classwork](tutorial-3-advanced-io/02-classwork.md)
-* [03) Homework](tutorial-3-advanced-io/03-homework.md)
+* [01) Mainboard Pins](01-mainboard-pins.md)
+* [02) PWM and Servo motor](tutorial-3-advanced-io/02-pwm-and-servo.md)
+* [03) Classwork](tutorial-3-advanced-io/03-classwork.md)
+* [04) Homework](tutorial-3-advanced-io/04-homework.md)
 
 ## [TUTORIAL 4: UART](tutorial-4-uart/README.md)
 

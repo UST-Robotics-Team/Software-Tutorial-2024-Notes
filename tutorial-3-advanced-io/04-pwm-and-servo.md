@@ -1,5 +1,5 @@
 # PWM and Servo motor
-[Back to Main](README.md)
+[Back to Main](README.md) | [Previous Page](01-mainboard-pins.md)
 
 > the tutorial with the most math
 
@@ -76,7 +76,7 @@ We will connect the timer to the servo motor. So, the Timer frequency = your des
 
 ### Classwork 1
 
-> [Classwork 1](02-classwork.md#classwork-1)
+> [Classwork 1](03-classwork.md#classwork-1)
 
 
 ## Channel
@@ -106,7 +106,7 @@ The ARR (auto reload register) from the previous paragraph is used as a downscal
 
 ### Classwork 2
 
-> [Classwork 2](02-classwork.md#classwork-2)
+> [Classwork 2](03-classwork.md#classwork-2)
 
 ### Deep thinking: How to choose PSC and ARR?
 
@@ -138,6 +138,14 @@ There are 4 steps in setting up the PWM output channel and the pin to use.
 4. Assign the GPIO pin to be the specific timer and channel. e.g Assign the PC7 pin to output the pwm signal of TIM3\_CH2.
 
 ![](https://i.imgur.com/MzvaMDI.png)
+
+5. Connect the servo motor to the correct pins of your mainboard
+
+- Orange PWM wire of servo connect to the pin you chose (PC7(TIM3\_CH2) for the example above)
+- Red 5V wire of servo connect to Vcc(Voltage) of GPIO port
+- Brown GND wire of servo connect to GND(Ground) of GPIO port
+
+![](images/Servo-wires.png)![](images/GPIO_pins.png)
 
 ### Start Coding!!!
 
@@ -213,4 +221,4 @@ while (1) {
 
 ### Classwork 3
 
-> [Classwork 3](02-classwork.md#classwork-3)
+> [Classwork 3](03-classwork.md#classwork-3)
