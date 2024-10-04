@@ -33,10 +33,21 @@ And you should print `Input Detected` when the switch is pressed and print nothi
 You may refer to the last notes about how to set up GPIO Pins, keep in mind that the example there is setting up `GPIO Output` while here you are doing `GPIO_Input`
 
 
-Notes for Setting up Pins:
-- Please plug the limit switch to those pins on the right hand side instead of left hand side.
-- Correct Pin Naming Picture:
-  ![](./image/Mainboard_pin.jpg)
+>Notes for Setting up Pins:
+>- Please plug the limit switch to those pins on the right hand side instead of left hand side.
+>- Although you may see `PC6`, `PC7`, `PC8`, `PC9` are occiuped by CAM, but as we don't have embed camera this year, you can use them for other purpose, e.g. ~~finish homework~~\
+>  To remove a pins, you can do by simpily do like this
+>   1. Click the pins you want to remove, click the current functionality the pins is using:\
+>      ![](./image/remove_pin_1.png)
+>   2. After you remove the current functionality, the pins should go grey like this:\
+>      ![](./image/remove_pin_2.png) 
+>   3. You can choose the functionality of this pins now:
+>   4. Follow the pins setup manual!
+>- For the input mode, you should set it as "PULL-UP" instead of the "No Pull Up No Pull Down", you can change it in the panel where you name your pin in the CubeMX and also your are using `GPIO Input` instead of `GPIO Output` \
+If you want to know more what is PULL UP, you can take a look to the further readong in `05-Setting-UP-GPIO.md`
+>  ![](./image/PC6%20Config.png)
+>- Correct Pin Naming Picture:
+>  ![](./image/Mainboard_pin.jpg)
 ---
 
 ## Q2: Tutorial 2 Homework
