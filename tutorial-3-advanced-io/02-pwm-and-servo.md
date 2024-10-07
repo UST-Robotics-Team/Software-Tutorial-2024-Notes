@@ -13,6 +13,8 @@ Dicaprio Cheung
 
 # Servo Motor
 
+>The servo of this data sheet is not the servo you are using in the tutorial. We are using MG996R Servo Motor
+
 ![data sheet reference](https://i.imgur.com/kcznbWB.png)
 
 ### What is servo motor?
@@ -144,6 +146,20 @@ There are 4 steps in setting up the PWM output channel and the pin to use.
 - Orange PWM wire of servo connect to the pin you chose (PC7(TIM3\_CH2) for the example above)
 - Red 5V wire of servo connect to Vcc(Voltage) of GPIO port
 - Brown GND wire of servo connect to GND(Ground) of GPIO port
+
+<details>
+
+<summary>My servo have different color wires!</summary>
+
+
+Servos of different models have different colored wires.
+
+For servos with White, Red, Black wires, their color code is:
+- White PWM wire of servo connect to the pin you chose (PC7(TIM3\_CH2) for the example above)
+- Red 5V wire of servo connect to Vcc(Voltage) of GPIO port
+- Black GND wire of servo connect to GND(Ground) of GPIO port
+
+</details>
 
 ![](images/Servo-wires.png)![](images/GPIO_pins.png)
 

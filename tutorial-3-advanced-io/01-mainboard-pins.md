@@ -105,6 +105,8 @@ The most common one is the 4 pin one but there are 2, 3, 5, 6 pin versions of th
 
 ![](images/molex.png)
 
+![](images/Molex_mainboard.jpeg)
+
 ## XA Connector
 
 XA Connector is the rarest one because it is only soldered on the boards made in Spring 2024. It is in brownish-white color or we call it rice color in chinese.
@@ -114,6 +116,8 @@ The most common one is the 4 pin one but there are 2, 3, 5, 6 pin versions of th
 ![](images/XA1.jpg) 
 ![](images/XA2.jpeg)
 
+![](images/XA_mainboard.jpeg)
+
 
 ## XH Connector
 
@@ -122,6 +126,8 @@ XH Connector is the newest one and is soldered on most of the new mainboards you
 The most common one is the 4 pin one but there are 2, 3, 5, 6 pin versions of them.
 
 ![](images/XH.jpg)
+
+![](images/XH_mainboard.jpeg)
 
 ## Rainbow wires
 
