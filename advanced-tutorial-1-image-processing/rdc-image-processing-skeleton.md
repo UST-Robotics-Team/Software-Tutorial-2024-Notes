@@ -9,7 +9,7 @@ To ensure that teams are actually using detection and not hardcoding the positio
 
 Attached here is a skeleton code that should be helpful in displaying your result.
 
-[skeleton_code.py](./skeleton.py)
+[skeleton_code.py](./skeleton_code.py)
 
 > [!TIP]
 > Press `q` to close the window :D
