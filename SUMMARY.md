@@ -75,9 +75,10 @@
 * [OpenCV in Python](advanced-tutorial-1-image-processing/opencv-in-python.md)
 * [RDC Image Processing Skeleton](advanced-tutorial-1-image-processing/rdc-image-processing-skeleton.md)
 
-## Advanced Tutorial 2: CAN
+## [Advanced Tutorial 2: CAN, RM-motor & PID control](advanced-tutorial-2-can/README.md)
 
 * [CAN and Robomaster Motor](advanced-tutorial-2-can/can-and-robomaster-motor.md)
+* [PID](advanced-tutorial-2-can/pid.md)
 
 ## Advanced Notes
 
@@ -87,5 +88,4 @@
 * [Omniwheel](advanced-notes/omniwheel.md)
 * [Mecanum Wheel](advanced-notes/mecanum-wheel.md)
 
-* [PID](advanced-notes/pid.md)
 * [Introduction to Embedded System - STM32](advanced-notes/introduction-to-embedded-system-stm32.md)
