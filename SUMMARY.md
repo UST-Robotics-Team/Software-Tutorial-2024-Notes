@@ -83,6 +83,7 @@
 
 * [Git Basics](advanced-notes/git-basics.md)
 * [Git Gud](advanced-notes/git-gud.md)
+* [MIT App Inventor](advanced-notes/mit-app-inventor.md)
 
 * [Omniwheel](advanced-notes/omniwheel.md)
 * [Mecanum Wheel](advanced-notes/mecanum-wheel.md)

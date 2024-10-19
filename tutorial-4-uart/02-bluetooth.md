@@ -151,4 +151,6 @@ For more details about bluetooth library, please refer to http://ai2.appinventor
 
 > You are recommended to find YouTube tutorials/online base codes to learn MIT App Inventor
 
+[link to MIT App Inventor advance notes](../advanced-notes/mit-app-inventor.md) 
+
 [Continue if you are using Windows 11](./02a-bluetooth-problem-solving-win11.md)
