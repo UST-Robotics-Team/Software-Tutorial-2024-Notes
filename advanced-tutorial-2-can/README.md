@@ -21,4 +21,8 @@ Content: CAN, RM-motor & PID control
 
 ## Advanced Tutorial 2 Links
 
-* will be released soon...
+1. [CAN network](CAN-bus.md)
+2. [RM-motor introduction](RM-motor.md)
+3. [RM-motor control](RM-motor-control.md)
+5. [PID Control](PID.md)
+
