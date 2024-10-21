@@ -1,4 +1,4 @@
-# Baic MIT App Inventor App Tutorial
+# Basic MIT App Inventor App Tutorial
 
 Author: Li Chi Kin (Andy) ckliam
 
