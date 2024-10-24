@@ -20,9 +20,9 @@ This should already be done for you in our boilerplate code.
 Just make sure the clock config are the same.
 
 ## CAN-related Functions
-Before trying to use CAN, please download this zip file and place the `can.h` and `can.c` in the `Inc` and `Src` folders respectively. We have defined some helper functions for you to make your life easier.
+Before trying to use CAN, please find and replace the `can.h` and `can.c` in the `Inc` and `Src` folders respectively. We have defined some helper functions for you to make your life easier.
 
-Download_Link: [can_library.zip](install/can_library.zip)
+Download_Link: [can.c](source/can.c) [can.h](source/can.h)
 
 Similar to all other protocol, CAN requires two steps, **CAN Init** & **CAN Data Collection**
 

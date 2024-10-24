@@ -12,6 +12,8 @@ Cecilia Lau
 
 </details>
 
+> It is easier to play [PID Game](https://janismac.github.io/ControlChallenges/) while reading the notes. :)
+
 ## Table of Content
 
 [#basics-concepts-before-learning-pid](pid.md#basics-concepts-before-learning-pid "mention")
