@@ -197,5 +197,5 @@ The on-time to the speed graph is shown at below.
 ![](https://i.imgur.com/hSHeZe6.png)
 
 For more information, you may check the official data-sheet to obtain the most accurate information  
-[RM-motor C620 data-sheet](https://rm-static.djicdn.com/tem/17348/RoboMaster%20C620%E6%97%A0%E5%88%B7%E7%94%B5%E6%9C%BA%E8%B0%83%E9%80%9F%E5%99%A8%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%EF%BC%88%E4%B8%AD%E8%8B%B1%E6%97%A5%EF%BC%89V1.01.pdf)  
-[RM-motor C610 data-sheet](https://rm-static.djicdn.com/tem/17348/RoboMaster%20C610%20Brushless%20DC%20Motor%20Speed%20Controller%20User%20Guide.pdf)
+[RM-motor C620 data-sheet](./datasheet/RoboMaster%20C620%20Datasheet.pdf)  
+[RM-motor C610 data-sheet](./datasheet/RoboMaster%20C610%20Brushless%20DC%20Motor%20Speed%20Controller%20User%20Guide.pdf)
