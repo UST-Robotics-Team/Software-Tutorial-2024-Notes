@@ -158,10 +158,10 @@ This shows how we can save compilation time in a large project. The dependency i
 
 > Note that for your homework we will use the provided the inefficient compiling method of generating the `.o` files then combining them together. However, feel free to try this concept out yourself (separate compile some small file and its dependency to get a better idea about this part)
 
-## Circular Dependency 
+## Optional Exercise 5
 
-## Checkpoint : Classwork 5
+> We covered the materials needed for your **Optional Exercise 5**! You can access it [here](https://github.com/UST-Robotics-Team/Software-Tutorial-2024-Notes/tree/main/tutorial-1-c-and-cubeide-setup/classwork/classwork-5-mean-median-min-max). Let's do it before moving on again.
 
-> We covered the materials needed for your **Classwork 5**! You can access it [here](https://github.com/UST-Robotics-Team/Software-Tutorial-2024-Notes/tree/main/tutorial-1-c-and-cubeide-setup/classwork/classwork-5-mean-median-min-max). Let's do it before moving on again.
+The next topic is about recusion, but this is a very optional topic.
 
 [Continue to the Next Page](12-recursion.md)

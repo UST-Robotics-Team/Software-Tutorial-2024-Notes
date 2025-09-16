@@ -77,11 +77,9 @@ Other than those, there are a few more features that we wish you can explore by 
 * [A3) Union](a3-union.md)
 * [A4) Pointers](a4-pointers.md)
 
-## Classworks
+## Optional Exercises
 
-We will have 5 classworks to check your understanding on the materials. They will be linked to after we have finished discussing sufficient material on the topic of the classwork.
-
-However, for a quick link to all of them:
+Here are some exercises that used to be a classwork in our previous tutorials.
 
 * [Classwork 1: Matrix Addition -- Arrays](classwork/classwork-1-matrix-addition.md)
 * [Classwork 2: First Word -- String](classwork/classwork-2-first-word.md)
@@ -91,27 +89,7 @@ However, for a quick link to all of them:
 
 ## Homeworks
 
-Please submit these homeworks before 4 Oct 2024 (Fri) 18:00
+Please submit these homeworks before 4 Oct 2025 23:59
 
-* [01) Number System Converter](homeworks/hw01-number-system-converter/README.md)
-* [02) Letter Chess](homeworks/hw02-letter-chess/README.md)
-* [03) Sand Tetris](homeworks/hw03-sand-tetris/README.md)
+[To Be Released]
 
-#### Bonus
-
-It is a bonus. So, it is optional to do.
-
-* [B1) Score Attack](homeworks/hwB1-score-attack/README.md)
-  
-Submission Method: `Github Classroom`
-Please first accept the assignment on Github Classroom: [https://classroom.github.com/a/P863CrLD](https://classroom.github.com/a/P863CrLD) and the click the link to your working repository. Details of the submission will later be given there (note that the picture below is just for your reference, it is not your workspace link and the due date is wrong).
-
-![alt text](./images/accept.png)
-
-You can see the submission guidelines on the README shown below the file list. (i know the format below is broken but i decided to ignore it)
-
-![alt text](./images/submit_guide.png)
-
-<br/>
-
-[To Tutorial 2 Main Page](../tutorial-2-basic-io/README.md) 

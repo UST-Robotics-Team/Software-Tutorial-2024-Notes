@@ -183,9 +183,9 @@ We want to take the item at index `2`:
 ```
 And then we proceed to take the item at index `1`, which is `6`
 
-## Checkpoint : Classwork 1
+## Optional Exercise
 
-> We covered the materials needed for your **Classwork 1**! You can access it [here](classwork/classwork-1-matrix-addition.md). Let's do it before moving on again.
+> We covered the materials needed for your **Optional Exercise 1** (used to be a classwork). You can access it [here](classwork/classwork-1-matrix-addition.md). We suggest that you can try it out on your own pace.
 
 ## String (Character Array)
 
@@ -247,9 +247,9 @@ printf("My first program in C prints %s :)", hello);
 
 It will print `My first program in C prints Hello World! :)` (null character is removed upon insertion to the format string)
 
-## Checkpoint : Classwork 2
+## Optional Exercise
 
-> We covered the materials needed for your **Classwork 2**! You can access it [here](classwork/classwork-2-first-word.md). Let's do it before moving on again.
+> We covered the materials needed for your **Optional Exercise 2** (used to be a classwork). You can access it [here](classwork/classwork-2-first-word.md). Let's do it before moving on again.
 
 ## The `<string.h>` Library*
 

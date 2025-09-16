@@ -252,9 +252,9 @@ Note that, in this case you must define a function at a location before it is ca
 
 If you would like to use `struct`s as the parameter, it is completely fine to do so.
 
-## Checkpoint : Classwork 3
+## Optional Exercise
 
-> We covered the materials needed for your **Classwork 3**! You can access it [here](classwork/classwork-3-area-of-circle.md). Let's do it before moving on again.
+> We covered the materials needed for your **Optional Exercise 3**! You can access it [here](classwork/classwork-3-area-of-circle.md) (used to be a classwork).Feel free to give it a try to check your understanding.
 
 ## Pass an Array to a Function
 If you would like to pass an array to a function, you can write it as the following:
@@ -320,7 +320,7 @@ int main(){
 
 However, you cannot return an array from a function (unless you would like to deal with pointers)
 
-## How to Modify Non-Array Variables in Functions*
+## How to Modify Non-Array Variables in Functions
 
 In this case, we need to use pointers...
 

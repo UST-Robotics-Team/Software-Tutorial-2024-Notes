@@ -1,6 +1,6 @@
 [Back to Main](README.md) | [Previous Page](09-functions.md)
 
-# Struct and Enums
+# Struct
 
 > At times, the data types provided by C might not be enough...
 
@@ -135,7 +135,7 @@ int main(){
 }
 ```
 
-## Enums
+## Enums (Optional)
 
 Do you still remember about this example in the control flow notes:
 
@@ -327,9 +327,9 @@ The stack object looks like the following:
 
 
 
-## Checkpoint : Classwork 4
+## Optional Exercise
 
-> We covered the materials needed for your **Classwork 4**! You can access it [here](classwork/classwork-4-greyscale-image.md). Let's do it before moving on again.
+> We covered the materials needed for your **Optional Exercise 4**! You can access it [here](classwork/classwork-4-greyscale-image.md) (Used to be a classwork). Feel free to give it a try to check your understanding.
 
 
 
